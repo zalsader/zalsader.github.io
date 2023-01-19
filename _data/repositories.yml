@@ -1,12 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - zalsader
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - zalsader/ceph
+  - zalsader/fsquestions
+  - zalsader/facemoji
+  - zalsader/swarmy-android
+  - zalsader/ThinkLikeAProgrammer
+  - zalsader/TicTacToe
+  - zalsader/T-Quest
