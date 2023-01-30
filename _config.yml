@@ -11,7 +11,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Cloud Software engineer at <a href='https://koor.tech/'>Koor Technologies, Inc.</a>.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Uses <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>.
 keywords: # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -113,10 +113,10 @@ contact_note: >
 # Blog
 # -----------------------------------------------------------------------------
 
-# blog_name: Blog # blog_name will be displayed in your blog page
-# blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-# blog_description: a simple whitespace theme for academics
-# permalink: /blog/:year/:title/
+blog_name: Blog # blog_name will be displayed in your blog page
+blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_description: Thoughts and ramblings
+permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
@@ -153,15 +153,15 @@ pagination:
 # Collections
 # -----------------------------------------------------------------------------
 
-collections:
+# collections:
   # news:
   #   defaults:
   #     layout: post
   #   output: true
   #   permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
+  # projects:
+  #   output: true
+  #   permalink: /projects/:path/
 
 # news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
 # news_limit: 5 # leave blank to include all the news in the `_news` folder
