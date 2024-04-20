@@ -13,9 +13,12 @@
   contents:
     - title: Cloud Storage Engineer
       institution: <a href="https://koor.tech" target="_blank">Koor Technologies, Inc</a>. Remotely from Toronto, Canada
-      year: 11/2022 - now
+      year: 11/2022 - 4/2024
       description:
-        - Maintain and expand the features of Koor Storage Distribution and contribute to Rook-Ceph.
+        - Provided customer support for Rook Ceph storage clusters.
+        - Developed a data control center for Rook using Protobuf and Nuxt
+        - Built a Kubernetes operator to simplify running Rook.
+        - Wrote tutorials about using Rook Ceph, and integrating with Knative
 
     - title: Storage Software Engineer
       institution: <a href="https://www.seagate.com/" target="_blank">Seagate</a>. Remotely from Toronto, Canada

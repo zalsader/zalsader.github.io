@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Cloud Storage Software engineer based in Toronto, Canada.
+subtitle: Cloud Storage Software engineer based in Waterloo, ON, Canada.
 
 profile:
   align: right
@@ -16,4 +16,4 @@ social: true  # includes social icons at the bottom of the page
 
 ### Hi there 👋
 
-I'm Zuhair AlSader (زهير  الصدر). My pronouns are he/him. I work with distributed systems, currently at [Koor Technologies](https://koor.tech/) and helping work on [Rook](https://rook.io).
+I'm Zuhair AlSader (زهير  الصدر). My pronouns are he/him. I work with distributed systems, most recently at [Koor Technologies](https://koor.tech/). [I am open to work](/cv)!
