@@ -36,10 +36,16 @@
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ content.url }}">{{ content.studyType }}</a>
+            <a href="{{ content.url }}">{{ content.studyType }} in {{ content.area }}</a>
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.institution }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
+          {% if content.score %}
+            <p class="ml-1 ml-md-4" style="font-size: 0.95rem">GPA: {{ content.score }}</p>
+          {% endif %}
+          <p class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.notes }}</p>
+          {% if content.thesis %}
+            <p class="ml-1 ml-md-4" style="font-size: 0.95rem">Thesis: {{ content.thesis }}</p>
+          {% endif %}
           <ul class="items">
             {% for item in content.courses %}
               <li>

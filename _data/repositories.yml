@@ -1,14 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - zalsader
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - zalsader/ceph
+  - zalsader/fsquestions
+  - zalsader/facemoji
+  - zalsader/swarmy-android
+  - zalsader/ThinkLikeAProgrammer
+  - zalsader/TicTacToe
+  - zalsader/T-Quest
