@@ -8,128 +8,128 @@
     - name: Location
       value: Waterloo, ON, Canada
 
-# - title: Experience
-#   type: time_table
-#   contents:
-#     - title: Storage Engineer
-#       institution: <a href="https://devzero.io" target="_blank">Devzero.io</a>. Remotely from Waterloo, ON, Canada
-#       year: 4/2024 - Now
-#       description:
-#         - Integrated Rook Ceph storage system into Devzero workspaces replacing AWS EBS, EFS and S3, & reducing storage costs by 60%
-#         - Introduced OpenFGA with Tailscale's network acls to control access to resources allowing the company to serve enterprise customers.
+- title: Experience
+  type: time_table
+  contents:
+    - title: Storage Engineer
+      institution: <a href="https://devzero.io" target="_blank">Devzero.io</a>. Remotely from Waterloo, ON, Canada
+      year: 4/2024 - Now
+      description:
+        - Integrated Rook Ceph storage system into Devzero workspaces replacing AWS EBS, EFS and S3, & reducing storage costs by 60%
+        - Introduced OpenFGA with Tailscale's network acls to control access to resources allowing the company to serve enterprise customers.
 
-#     - title: Cloud Storage Engineer
-#       institution: <a href="https://koor.tech" target="_blank">Koor Technologies, Inc</a>. Remotely from Toronto, Canada
-#       year: 11/2022 - 4/2024
-#       description:
-#         - Provided customer support for Rook Ceph storage clusters.
-#         - Developed a data control center for Rook using Protobuf and Nuxt
-#         - Built a Kubernetes operator to simplify running Rook.
-#         - Wrote tutorials about using Rook Ceph, and integrating with Knative
+    - title: Cloud Storage Engineer
+      institution: <a href="https://koor.tech" target="_blank">Koor Technologies, Inc</a>. Remotely from Toronto, Canada
+      year: 11/2022 - 4/2024
+      description:
+        - Provided customer support for Rook Ceph storage clusters.
+        - Developed a data control center for Rook using Protobuf and Nuxt
+        - Built a Kubernetes operator to simplify running Rook.
+        - Wrote tutorials about using Rook Ceph, and integrating with Knative
 
-#     - title: Storage Software Engineer
-#       institution: <a href="https://www.seagate.com/" target="_blank">Seagate</a>. Remotely from Toronto, Canada
-#       year: 11/2021 - 10/2022
-#       description:
-#         - >
-#           Lead a team of 3 to design and test a C/C++ library that integrates Intel's
-#           <a href="https://daos.io/" target="_blank">DAOS</a> NVMe storage engine with 
-#           <a href="https://ceph.io/" target="_blank">Ceph</a>'s Rados and Seagate's <a href="https://github.com/Seagate/cortx" target="_blank">CORTX</a>
-#           to support Amazon's S3 API. This makes it easier for S3 users to adopt
-#           DAOS and CORTX in a flexible unified open-source storage system.
+    - title: Storage Software Engineer
+      institution: <a href="https://www.seagate.com/" target="_blank">Seagate</a>. Remotely from Toronto, Canada
+      year: 11/2021 - 10/2022
+      description:
+        - >
+          Lead a team of 3 to design and test a C/C++ library that integrates Intel's
+          <a href="https://daos.io/" target="_blank">DAOS</a> NVMe storage engine with 
+          <a href="https://ceph.io/" target="_blank">Ceph</a>'s Rados and Seagate's <a href="https://github.com/Seagate/cortx" target="_blank">CORTX</a>
+          to support Amazon's S3 API. This makes it easier for S3 users to adopt
+          DAOS and CORTX in a flexible unified open-source storage system.
 
-#     - title: Software Engineer
-#       institution: <a href="https://tophatter.com/" target="_blank">Tophatter</a>. Remotely from Toronto, Canada
-#       year: 6/2021 - 11/2021
-#       description:
-#         - >
-#           Used Ruby on Rails, ReactJS and React Native to introduce a new
-#           TikTok-style video feed and AB-test it, improving revenue by 13%
+    - title: Software Engineer
+      institution: <a href="https://tophatter.com/" target="_blank">Tophatter</a>. Remotely from Toronto, Canada
+      year: 6/2021 - 11/2021
+      description:
+        - >
+          Used Ruby on Rails, ReactJS and React Native to introduce a new
+          TikTok-style video feed and AB-test it, improving revenue by 13%
 
-#     - title: Software Engineer
-#       institution: <a href="https://getjerry.com/" target="_blank">Jerry</a>. Toronto, Canada
-#       year: 6/2020 - 5/2021
-#       description:
-#         - >
-#           Used ReactJS and GraphQL to improve CRM for sales agents serving
-#           200k+ users reducing user processing time by 20%.
-#         - >
-#           Moved legacy code from Kubernetes to Serverless architecture,
-#           improving scalability and code maintainability through a monorepo.
+    - title: Software Engineer
+      institution: <a href="https://getjerry.com/" target="_blank">Jerry</a>. Toronto, Canada
+      year: 6/2020 - 5/2021
+      description:
+        - >
+          Used ReactJS and GraphQL to improve CRM for sales agents serving
+          200k+ users reducing user processing time by 20%.
+        - >
+          Moved legacy code from Kubernetes to Serverless architecture,
+          improving scalability and code maintainability through a monorepo.
 
-#     - title: Research Assistant
-#       institution: <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>. Waterloo, Canada
-#       year: 9/2017 - 6/2020
-#       description:
-#         - >
-#           Lead Research in distributed systems, message queues and MPI.
-#           Experience with Kafka, RabbitMQ, Pulsar, ActiveMQ, Redis and others
-#         - >
-#           Teaching assistant for: Distributed systems and Operating Systems classes
+    - title: Research Assistant
+      institution: <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>. Waterloo, Canada
+      year: 9/2017 - 6/2020
+      description:
+        - >
+          Lead Research in distributed systems, message queues and MPI.
+          Experience with Kafka, RabbitMQ, Pulsar, ActiveMQ, Redis and others
+        - >
+          Teaching assistant for: Distributed systems and Operating Systems classes
 
-#     - title: Lead Software Engineer
-#       institution: <a href="https://www.endeavorpal.com/" target="_blank">Endeavor Pal, LLC</a>. Nablus, Palestine
-#       year: 6/2015 - 8/2017
-#       description:
-#         - >
-#           Lead a team of 4 to develop a web and mobile application integrated
-#           with social media, SMS, and payment APIs. Used by 100+ customers
+    - title: Lead Software Engineer
+      institution: <a href="https://www.endeavorpal.com/" target="_blank">Endeavor Pal, LLC</a>. Nablus, Palestine
+      year: 6/2015 - 8/2017
+      description:
+        - >
+          Lead a team of 4 to develop a web and mobile application integrated
+          with social media, SMS, and payment APIs. Used by 100+ customers
 
-# - title: Education
-#   type: time_table
-#   contents:
-#     - title: MMath in Computer Science
-#       institution: <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>. Waterloo, Canada
-#       year: 2017 - 2020
-#       description:
-#         - 'GPA: 90.50% (A+)'
-#         - 'Thesis: Optimizing MPI Collective Operations for Cloud Deployments'
-#         - title: Supervisors
-#           contents:
-#             - <a href="https://cs.uwaterloo.ca/~alkiswan/" target="_blank">Samer Al-Kiswany</a>
-#             - <a href="https://cs.uwaterloo.ca/~brecht/" target="_blank">Tim Brecht</a>
-#         - title: Research labs
-#           contents:
-#             - <a href="https://wasl.uwaterloo.ca/" target="_blank">Waterloo Advanced Systems Lab (WASL)</a>
-#             - <a href="https://syn.uwaterloo.ca/" target="_blank">Systems and Networking Group (SyN)</a>
+- title: Education
+  type: time_table
+  contents:
+    - title: MMath in Computer Science
+      institution: <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>. Waterloo, Canada
+      year: 2017 - 2020
+      description:
+        - 'GPA: 90.50% (A+)'
+        - 'Thesis: Optimizing MPI Collective Operations for Cloud Deployments'
+        - title: Supervisors
+          contents:
+            - <a href="https://cs.uwaterloo.ca/~alkiswan/" target="_blank">Samer Al-Kiswany</a>
+            - <a href="https://cs.uwaterloo.ca/~brecht/" target="_blank">Tim Brecht</a>
+        - title: Research labs
+          contents:
+            - <a href="https://wasl.uwaterloo.ca/" target="_blank">Waterloo Advanced Systems Lab (WASL)</a>
+            - <a href="https://syn.uwaterloo.ca/" target="_blank">Systems and Networking Group (SyN)</a>
 
-#     - title: BSc in Computer Engineering
-#       institution: <a href="https://www.najah.edu/en/" target="_blank">An-Najah National University</a>, Nablus, Palestine
-#       year: 2012 - 2016
-#       description:
-#         - 'GPA: 3.76/4 with Honor'
+    - title: BSc in Computer Engineering
+      institution: <a href="https://www.najah.edu/en/" target="_blank">An-Najah National University</a>, Nablus, Palestine
+      year: 2012 - 2016
+      description:
+        - 'GPA: 3.76/4 with Honor'
 
-# - title: Awards and Activities
-#   type: time_table
-#   contents:
-#     - year: 2018 - 2019
-#       text: Chair of IEEE Student Branch at the University of Waterloo
-#     - year: 2012 - 2016
-#       text: Maintained Honors Degree throughout my study at An-Najah National University
-#     - year: 2016 - 2017
-#       text: Local Lead and Mentor at NASA Space Apps Challenge in Palestine, which was a hackathon with 40+ attendees
-#     - year: 2014
-#       text: Participated in IEEEXtreme Programming Contest. Achieved 83rd place worldwide
+- title: Awards and Activities
+  type: time_table
+  contents:
+    - year: 2018 - 2019
+      text: Chair of IEEE Student Branch at the University of Waterloo
+    - year: 2012 - 2016
+      text: Maintained Honors Degree throughout my study at An-Najah National University
+    - year: 2016 - 2017
+      text: Local Lead and Mentor at NASA Space Apps Challenge in Palestine, which was a hackathon with 40+ attendees
+    - year: 2014
+      text: Participated in IEEEXtreme Programming Contest. Achieved 83rd place worldwide
         
-# - title: Skills and Interests
-#   type: map
-#   contents:
-#     - name: Programming Languages
-#       value: >
-#         Go, Python, C, C++, Ruby, JavaScript (+ TypeScript), Bash, PHP, Java
-#     - name: Storage Development
-#       value: >
-#         Rook, Ceph, Amazon S3 API, Intel DAOS, Seagate CORTX, Minio
-#     - name: Web Development
-#       value: >
-#         Django, OpenAPI, Protobuf, Ruby on Rails, NodeJS, GraphQL, PostgresQL, React, CakePHP
-#     - name: Systems
-#       value: >
-#         Kubernetes, K8s operators, Kata containers OpenFGA, Tailscale, Headscale, 
-#         Serverless architecture, message-oriented middleware, linux cluster management, 
-#         distributed and parallel systems, software- defined networking, system design and evaluation, systems security
-#     - name: Other
-#       value: >
-#         Fast learner, team player, agile development, Writing docs and blog posts, 
-#         team management, git, Continuous Integration (CI/CD), gitops, Github Actions
+- title: Skills and Interests
+  type: map
+  contents:
+    - name: Programming Languages
+      value: >
+        Go, Python, C, C++, Ruby, JavaScript (+ TypeScript), Bash, PHP, Java
+    - name: Storage Development
+      value: >
+        Rook, Ceph, Amazon S3 API, Intel DAOS, Seagate CORTX, Minio
+    - name: Web Development
+      value: >
+        Django, OpenAPI, Protobuf, Ruby on Rails, NodeJS, GraphQL, PostgresQL, React, CakePHP
+    - name: Systems
+      value: >
+        Kubernetes, K8s operators, Kata containers OpenFGA, Tailscale, Headscale, 
+        Serverless architecture, message-oriented middleware, linux cluster management, 
+        distributed and parallel systems, software- defined networking, system design and evaluation, systems security
+    - name: Other
+      value: >
+        Fast learner, team player, agile development, Writing docs and blog posts, 
+        team management, git, Continuous Integration (CI/CD), gitops, Github Actions
 
