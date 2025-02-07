@@ -1,115 +1,54 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{10.1145/3526061.3532098,
+author = {Tkachuk, Andriy and Alsader, Zuhair},
+title = {One Big Happy Family: Sharing the S3 Layer between Ceph, CORTX, and DAOS},
+year = {2022},
+isbn = {9781450393126},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3526061.3532098},
+doi = {10.1145/3526061.3532098},
+abstract = {Object storage has transformed the storage industry. Freed from the complex hierarchical organization of file systems, object storage systems have achieved tremendous growth and scalability in the past two decades. However, object storage systems for Enterprise/Cloud computing and those for High Performance Computing (HPC) have had some differences; the main difference being the client interface. Enterprise computing has preferred a GET-PUT interface which, similar to Map-Reduce, has enabled tremendous human productivity by simplifying the interface. Whereas, typical HPC frameworks tend to optimize computational productivity over human productivity which means they prefer more complex, low-level interfaces with more flexibility and more ability to optimize.Given this, it is no surprise that three object storage systems (Ceph, CORTX, and DAOS) originally motivated by HPC all have similar low-level interfaces (librados, libmotr, and libdaos respectively). However, given the increased convergence of Cloud and HPC, these object storage systems also need to support the industry standard interface which has becomes Amazon's S3 protocol. In this talk, we will discuss how the Ceph project was the first to add an S3 layer, how they later made it modular so that multiple object backends could share it, and how two small groups of engineers have added modular backends for both CORTX and DAOS.},
+booktitle = {Proceedings of the 2022 Workshop on Emerging Open Storage Systems and Solutions for Data Intensive Computing},
+pages = {7},
+numpages = {1},
+keywords = {hard drives, cloud storage, storage class memory, s3},
+location = {Minneapolis, MN, USA},
+abbr = {EMOSS22},
+series = {EMOSS '22},
+pdf = {DAOS-Design-Document.pdf},
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@mastersthesis{AlSaderZuhair2020,
+author={{AlSader, Zuhair}},
+title={Optimizing MPI Collective Operations for Cloud Deployments},
+year={2020},
+publisher={UWSpace},
+abbr={UWSpace},
+selected={true},
+pdf={COOL-Thesis2020.pdf},
+url={http://hdl.handle.net/10012/15581},
+website={http://hdl.handle.net/10012/15581},
+bibtex_show={true},
+abstract={Cloud infrastructures are increasingly being adopted as a platform for high performance computing (HPC) science and engineering applications. For HPC applications, the Message-Passing Interface (MPI) is widely-used. Among MPI operations, collective operations are the most I/O intensive and performance critical. However, classical MPI implementations are inefficient on cloud infrastructures because they are implemented at the application layer using network-oblivious communication patterns. These patterns do not differentiate between local or cross-rack communication and hence do not exploit the inherent locality between processes collocated on the same node or the same rack of nodes. Consequently, they can suffer from high network overheads when communicating across racks. In this thesis, we present COOL, a simple and generic approach for Message-Passing Interface (MPI) collective operations. COOL enables highly efficient designs for collective operations in the cloud. We then present a system design based on COOL that describes how to implement frequently used collective operations. Our design efficiently uses the intra-rack network while significantly reducing cross-rack communication, thus improving application performance and scalability. We use software-defined networking capabilities to build more efficient network paths for I/O intensive collective operations. Our analytic evaluation shows that our design significantly reduces the network overhead across racks. Furthermore, when compared with OpenMPI and MPICH, our design reduces the latency of collective operations by a factor of log N, where N is the total number of processes, decreases the number of exchanged messages by a factor of N and reduces the network load by up to an order of magnitude. These significant improvements come at the cost of a small increase in the computation load on a few processes.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@INPROCEEDINGS{8457871,
+  author={Alfatafta, Mohammed and AlSader, Zuhair and Al-Kiswany, Samer},
+  booktitle={2018 IEEE 11th International Conference on Cloud Computing (CLOUD)}, 
+  title={COOL: A Cloud-Optimized Structure for MPI Collective Operations}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={746-753},
+  abstract={We present COOL, a simple and generic structure for MPI collective operations. COOL enables highly efficient designs for all collective operations in the cloud. We then present a system design based on COOL that implements frequently used collective operations. Our design efficiently uses the intra-rack network while minimizing cross-rack communication, thus improving the application performance and scalability. We use recent software-defined networking capabilities to build optimal network paths for I/O intensive collective operations. Our analytical evaluation shows that our design imposes the least possible network overhead across racks. Furthermore, when compared with OpenMPI and MPICH, our design reduces the number of steps to only three, decreases the number of exchanged messages by a factor of N, the total number of processes, and reduces the network load by up to an order of magnitude. These significant improvements come at the cost of a modest increase in the computation load on a few processes.},
+  keywords={},
   selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+  pdf={COOL-CLOUD18.pdf},
+  preview={cool_logo.png},
+  doi={10.1109/CLOUD.2018.00102},
+  ISSN={2159-6190},
+  month={July},
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+  website={https://wasl.uwaterloo.ca/projects/cool/},
 }

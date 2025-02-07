@@ -1,9 +1,8 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+UWSpace:
+  url: https://uwspace.uwaterloo.ca/
+  color: "#C60078"
 
-"PhysRev":
-  url: https://journals.aps.org/
+EMOSS22:
+  url: https://iosea-project.eu/event/emoss-22-workshop/
+  color: "#3182CE"
 
-"Vision":
-  color: "#009f36"
