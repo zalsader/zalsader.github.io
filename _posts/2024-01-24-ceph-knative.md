@@ -7,7 +7,7 @@ categories: [ceph, knative]
 thumbnail: assets/img/2024-01-24-ceph-knative/serverless-storage-knative-ceph.jpg
 ---
 
-This post was originally written while I worked at [Koor Technologies](https://koor.tech). Since that website is no longer online, I republished [that article](https://web.archive.org/web/20240416174014/https://blog.koor.tech/blog/2024/serverless-storage-knative-ceph/) here.
+This post was originally written while I worked at [Koor Technologies](https://koor.tech). Since that website is no longer online, I am republishing [that article](https://web.archive.org/web/20240416174014/https://blog.koor.tech/blog/2024/serverless-storage-knative-ceph/) here.
 
 <div class="row mt-3 justify-content-center">
     <div class="col-sm-6 mt-3 mt-md-0">
