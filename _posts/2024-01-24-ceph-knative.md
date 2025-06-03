@@ -22,12 +22,12 @@ Serverless functions are commonly used to develop responsively scalable APIs for
 This blog series explores different options for using storage in [Knative](https://knative.dev/), a popular open-source serverless platform.
 
 ## Knative: Serverless Functions on your Servers
+
 Similar to how you can bring cloud infrastructure to your own data center using [OpenStack](https://www.openstack.org/) and [Kubernetes](https://kubernetes.io/), you can bring serverless computing to your own servers. This migration back to local cloud services could be motivated by cost or by business needs to keep data and computation partially or fully separated from the public cloud.
 
 One popular platform to run serverless workloads is [Knative](https://knative.dev/), which runs on Kubernetes and is used in [Google Cloud Run](https://cloud.google.com/blog/products/serverless/knative-based-cloud-run-services-are-ga). Knative is built on Kubernetes, which allows it to be platform-agnostic and easily scalable.
 
 Knative consists of two main components: Serving and Eventing. Knative Serving manages the serverless workload as containers in Kubernetes and handles routing and scaling. Knative Eventing is a collection of APIs that allow using event-driven architecture with serverless applications.
-
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -39,12 +39,12 @@ Knative consists of two main components: Serving and Eventing. Knative Serving m
     used under <a href="https://github.com/knative/docs/blob/main/LICENSE-docs" target="_blank">CC BY 4.0</a> and recolored
 </div>
 
-
 Many applications of serverless architecture, like image and video processing, require access to storage to store inputs, outputs or intermediate objects. When using AWS Lambda as a serverless platform, [the general wisdom](https://aws.amazon.com/blogs/compute/choosing-between-aws-lambda-data-storage-options-in-web-apps/) is to use AWS S3 or AWS EFS. Since Knative is based on Kubernetes, it is natural to think about managing storage in Kubernetes too - away from the costs associated with the public cloud. This is where Rook Ceph shines.
 
 This first part of the series walks through installing Knative on a Kubernetes Cluster and attaching Ceph storage to functions. It uses an example of a file processing pipeline with a producer and a consumer.
 
 ## Prerequisites
+
 You need to have a working Kubernetes cluster that meets the minimum requirements of both [Rook](https://rook.io/docs/rook/v1.13/Getting-Started/Prerequisites/prerequisites/) and [Knative](https://knative.dev/docs/install/operator/knative-with-operators/#prerequisites). This tutorial uses Rook v1.13.0 and Knative v1.12.0 . This is a summary of the requirements for a production cluster:
 
 - Kubernetes v1.26 or newer.
@@ -54,6 +54,7 @@ You need to have a working Kubernetes cluster that meets the minimum requirement
 We ran this using our demo cluster, which we set up using [Terraform](https://www.terraform.io/) and [Kubeone](https://github.com/kubermatic/kubeone) on [Hetzner Cloud](https://www.hetzner.com/cloud). All the code is [available on GitHub](https://github.com/koor-tech/demo-gitops/tree/b12e89953ea71beed97f1f8b182df6f7fd096a1d/exp/knative-basic).
 
 ### Installing Knative
+
 There are many ways to install Knative as [described in the docs](https://knative.dev/docs/install/). The easiest in my opinion is to use the Knative Operator:
 
 ```bash
@@ -103,6 +104,7 @@ kubectl apply -f serving.yaml
 ```
 
 ### Installing Knative Func
+
 Knative `func` is a CLI that makes it easy for users to create and deploy functions as Knative Services. You can [install it](https://knative.dev/docs/functions/install-func/) using Homebrew or from GitHub releases.
 
 ```bash
@@ -113,6 +115,7 @@ func version
 ```
 
 ### Installing Rook Ceph
+
 Installing Rook using [Helm](https://helm.sh/) is pretty straightforward. First, you need to grab the helm repository and install the Rook-Ceph operator. [The default values are pretty solid](https://rook.io/docs/rook/v1.13/Helm-Charts/operator-chart/#configuration), so you might not need to specify a `values.yaml` file.
 
 ```bash
@@ -155,6 +158,7 @@ $ kubectl exec -n rook-ceph -it deploy/rook-ceph-tools -- ceph status
 ```
 
 ## Let’s write some code! 🧑‍💻
+
 To simulate a data pipeline, we will use two functions that share a CephFS volume. The producer function creates a file with random data in storage, and the consumer function chooses a file, checks its md5 then deletes it. We also have a function that lists the files in storage to track progress. A real data pipeline could consist of multiple stages of more sophisticated processing, like machine learning, video filters, or data aggregators.
 
 First, we create the `PersistentVolumeClaim`:
@@ -167,7 +171,7 @@ metadata:
   name: knative-pc-cephfs
 spec:
   accessModes:
-  - ReadWriteMany
+    - ReadWriteMany
   resources:
     requests:
       storage: 11Gi
@@ -177,6 +181,7 @@ spec:
 ```bash
 kubectl apply -f pvc.yaml
 ```
+
 Then, we create the functions. We will use Golang for our example, but you can choose any of [the supported languages](https://github.com/knative/func/blob/main/docs/language-packs/language-pack-contract.md#built-in-language-packs).
 
 ```console
@@ -211,9 +216,9 @@ Doing this adds the following lines to your `func.yaml`:
 # producer/func.yaml
 run:
   volumes:
-  - presistentVolumeClaim:
-      claimName: knative-pc-cephfs
-    path: /files
+    - presistentVolumeClaim:
+        claimName: knative-pc-cephfs
+      path: /files
 ```
 
 We can now access the CephFS storage like any directory. This is the producer function for example:
@@ -273,6 +278,7 @@ func Handle(ctx context.Context, res http.ResponseWriter, req *http.Request) {
 You can find the full code for all the functions on [our GitHub repository](https://github.com/koor-tech/demo-gitops/tree/b12e89953ea71beed97f1f8b182df6f7fd096a1d/exp/knative-basic).
 
 ## Building and Deploying 🛠️
+
 Now we are ready to build and deploy these functions. Replace `docker.io/<your_username>` with your registry.
 
 ```bash
@@ -288,6 +294,7 @@ kubectl patch services.serving/producer --type merge \
 That last command is needed because of a mismatch in user permissions for the attached volume. [A GitHub issue](https://github.com/knative/func/issues/2108) was raised to the knative team to address that. Deploy the other functions similarly, replacing `producer` in the last command with the name of the function.
 
 ## Let’s Run This! 🚀
+
 Now that the function is deployed, we can invoke it using func invoke. This is the result of invoking the producer function:
 
 ```console
@@ -318,4 +325,5 @@ Removing Knative Service 'consumer' and all dependent resources
 ```
 
 ## Rook Ceph is an excellent match for Knative
+
 As we’ve seen in this tutorial, setting up Knative with Rook Ceph as a storage provider is easy. Both tools use Kubernetes as a substrate which means you can save resources by running both of them on the same cluster. You can also use the [Ceph CSI driver](https://rook.io/docs/rook/v1.13/CRDs/Cluster/external-cluster/) to connect to Ceph storage on a different cluster.
