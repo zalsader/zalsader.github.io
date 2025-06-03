@@ -4,9 +4,16 @@ title: Serverless Storage with Knative and Ceph
 date: 2024-01-29 21:01:00
 description: How to use Ceph for storage in serverless functions using knative
 categories: [ceph, knative]
+thumbnail: assets/img/2024-01-24-ceph-knative/serverless-storage-knative-ceph.jpg
 ---
 
 This post was originally written while I worked at [Koor Technologies](https://koor.tech). Since that website is no longer online, I republished [that article](https://web.archive.org/web/20240416174014/https://blog.koor.tech/blog/2024/serverless-storage-knative-ceph/) here.
+
+<div class="row mt-3 justify-content-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/2024-01-24-ceph-knative/serverless-storage-knative-ceph.jpg" class="img-fluid z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 You’ve probably heard some buzz about serverless computing. Well, the “serverless” part is a metaphor, your functions still run on servers, just like how cloud computing generally involves no water vapor (I’m not aware of any steam-powered data centers). The innovation in serverless computing is allowing developers to write and run short functions (aka lambdas) without knowing a lot about the underlying infrastructure. The function is run by the service provider and developers are usually billed based on the resources used during execution. This model of cloud computing is also known as Function-as-a-Service (FaaS).
 
