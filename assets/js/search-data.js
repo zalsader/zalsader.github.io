@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-welcome-to-my-blog",
+        },{id: "post-serverless-storage-with-knative-and-ceph",
+      
+        title: "Serverless Storage with Knative and Ceph",
+      
+      description: "How to use Ceph for storage in serverless functions using knative",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/ceph-knative/";
+        
+      },
+    },{id: "post-welcome-to-my-blog",
       
         title: "Welcome to my blog!",
       
