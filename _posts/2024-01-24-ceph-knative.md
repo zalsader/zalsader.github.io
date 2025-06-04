@@ -329,3 +329,5 @@ Removing Knative Service 'consumer' and all dependent resources
 ## Rook Ceph is an excellent match for Knative
 
 As we’ve seen in this tutorial, setting up Knative with Rook Ceph as a storage provider is easy. Both tools use Kubernetes as a substrate which means you can save resources by running both of them on the same cluster. You can also use the [Ceph CSI driver](https://rook.io/docs/rook/v1.13/CRDs/Cluster/external-cluster/) to connect to Ceph storage on a different cluster.
+
+Stay tuned for [the next part in this series]({% post_url 2024-03-05-ceph-ai %}) where we use the Ceph S3 API with Knative.
