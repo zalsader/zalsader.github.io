@@ -2,9 +2,11 @@
 layout: post
 title: Serverless Storage with Knative and Ceph
 date: 2024-01-29 21:01:00
-description: How to use Ceph for storage in serverless functions using knative
+description: Do you need to access storage in your Knative functions? Here’s how to do it with Rook Ceph
 categories: [ceph, knative]
 thumbnail: assets/img/2024-01-24-ceph-knative/serverless-storage-knative-ceph.jpg
+toc:
+  sidebar: left
 ---
 
 This post was originally written while I worked at [Koor Technologies](https://koor.tech). Since that website is no longer online, I am republishing [that article](https://web.archive.org/web/20240416174014/https://blog.koor.tech/blog/2024/serverless-storage-knative-ceph/) here.
@@ -48,7 +50,7 @@ This first part of the series walks through installing Knative on a Kubernetes C
 You need to have a working Kubernetes cluster that meets the minimum requirements of both [Rook](https://rook.io/docs/rook/v1.13/Getting-Started/Prerequisites/prerequisites/) and [Knative](https://knative.dev/docs/install/operator/knative-with-operators/#prerequisites). This tutorial uses Rook v1.13.0 and Knative v1.12.0 . This is a summary of the requirements for a production cluster:
 
 - Kubernetes v1.26 or newer.
-- At least four nodes, each having at least 2 CPUs, 4 GB of memory, and 20 GB of disk storage.
+- At least three nodes, each having at least 2 CPUs, 4 GB of memory, and 20 GB of disk storage.
 - [Raw devices](https://rook.io/docs/rook/v1.13/Getting-Started/Prerequisites/prerequisites/#ceph-prerequisites) / partitions / logical volumes
 
 We ran this using our demo cluster, which we set up using [Terraform](https://www.terraform.io/) and [Kubeone](https://github.com/kubermatic/kubeone) on [Hetzner Cloud](https://www.hetzner.com/cloud). All the code is [available on GitHub](https://github.com/koor-tech/demo-gitops/tree/b12e89953ea71beed97f1f8b182df6f7fd096a1d/exp/knative-basic).
