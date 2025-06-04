@@ -37,11 +37,22 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-serverless-storage-with-knative-and-ceph",
+        },{id: "post-running-serverless-ai-with-knative-and-ceph",
+      
+        title: "Running Serverless AI with Knative and Ceph",
+      
+      description: "Running a pre-trained Machine Learning model as a serverless function made easy with Knative and Ceph object storage",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/ceph-ai/";
+        
+      },
+    },{id: "post-serverless-storage-with-knative-and-ceph",
       
         title: "Serverless Storage with Knative and Ceph",
       
-      description: "How to use Ceph for storage in serverless functions using knative",
+      description: "Do you need to access storage in your Knative functions? Here’s how to do it with Rook Ceph",
       section: "Posts",
       handler: () => {
         
