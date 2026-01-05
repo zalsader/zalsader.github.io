@@ -3,7 +3,7 @@
     "name": "Zuhair AlSader",
     "label": "Software Engineer",
     "image": "https://zalsader.com/assets/img/prof_pic-480.webp",
-    "email": "zalsader@hotmail.com",
+    "email": "z@zalsader.com",
     "url": "https://zalsader.com",
     "summary": "Cloud-native software engineer with 9+ years of experience in distributed systems, storage infra, and backend development. Rook & Ceph expert. Skilled in Kubernetes, Golang, Python, C++, and DevOps tools with a strong academic background and published research.",
     "location": {
@@ -26,10 +26,20 @@
   },
   "work": [
     {
+      "name": "IBM Datastax",
+      "position": "Software Engineer",
+      "startDate": "2025-08-18",
+      "endDate": "",
+      "url": "http://datastax.com/",
+      "highlights": [
+        "Develop and support the Datastax infrastructure using Kubernetes operators and Terraform"
+      ]
+    },
+    {
       "name": "Devzero.io",
       "position": "Software Engineer",
       "startDate": "2024-04-01",
-      "endDate": "2025-04-30",
+      "endDate": "2025-08-18",
       "url": "https://devzero.io",
       "highlights": [
         "Integrated Rook Ceph storage system into Devzero workspaces using terraform, helm, Kubernetes Python API & Rook-Ceph APIs, replacing AWS EBS, EFS and S3, and reducing storage costs by 60%",
