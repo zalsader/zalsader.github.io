@@ -31,9 +31,7 @@
       "startDate": "2025-08-18",
       "endDate": "",
       "url": "http://datastax.com/",
-      "highlights": [
-        "Develop and support the Datastax infrastructure using Kubernetes operators and Terraform"
-      ]
+      "highlights": ["Develop and support the Datastax infrastructure using Kubernetes operators and Terraform"]
     },
     {
       "name": "Devzero.io",
