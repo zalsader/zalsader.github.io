@@ -16,7 +16,7 @@ social: true # includes social icons at the bottom of the page
 
 ### Hi there 👋
 
-I'm Zuhair AlSader (زهير الصدر)\*, a cloud-focused software engineer. My pronouns are he/him. I primarily work with Kubernetes, storage and distributed systems, currently at [Datastax](https://www.datastax.com/).
+I'm Zuhair AlSader (زهير الصدر)\*, a cloud-focused software engineer. My pronouns are he/him. I primarily work with Kubernetes, storage and distributed systems, currently at [IBM Datastax](https://www.datastax.com/).
 
 <details>
   <summary>* Pronounced [zuhɛːr asˤˈsˤadˌder]</summary>
